@@ -49,7 +49,7 @@
    &kp EXCL &kp AT    &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR
    &kp ESC  &trans    &trans   &trans   &trans      &trans    &kp MINUS &kp PLUS  &kp LBKT &kp RBKT
    &kp CAPS &kp TILDE &trans   &trans   &trans      &kp UNDER &trans    &trans    &kp PIPE &kp DQT
-                      &trans   &mt 1    &trans      &kp RET   &mt 2     &kp DEL
+                      &trans   &mo 1    &trans      &kp RET   &mo 2     &kp DEL
                         >;
                 };
         };
