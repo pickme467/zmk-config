@@ -6,14 +6,10 @@
 
 #include <dt-bindings/zmk/matrix_transform.h>
 
-&foostan_minidox_layout {
-    transform = <&default_transform>;
-};
-
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,physical-layout = &foostan_minidox_layout;
+        zmk,matrix-transform = &default_transform;
     };
 
     default_transform: keymap_transform_0 {
