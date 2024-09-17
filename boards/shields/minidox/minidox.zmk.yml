@@ -1,0 +1,11 @@
+file_format: "1"
+id: minidox
+name: Minidox
+type: shield
+url: https://github.com/foostan/crkbd/
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - minidox_left
+  - minidox_right
