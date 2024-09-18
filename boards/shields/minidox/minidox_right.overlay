@@ -6,6 +6,10 @@
 
 #include "minidox.dtsi"
 
+&default_transform {
+    col-offset = <5>;
+};
+
 &kscan0 {
     col-gpios
         = <&pro_micro  4 GPIO_ACTIVE_HIGH>
