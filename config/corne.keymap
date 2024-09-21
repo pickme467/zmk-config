@@ -64,7 +64,7 @@
                       , <&macro_release &kp LALT &kp LGUI>
                    ;
                 };
-                rsft_lgui: rshift_lgui {
+                rsft_lgui: rsft_lgui {
                    compatible = "zmk,behavior-macro";
                    #binding-cells = <0>;
                    bindings
@@ -73,7 +73,7 @@
                       , <&macro_release &kp RSHFT &kp LGUI>
                    ;
                 };
-                lalt_rsft_lgui: lalt_lgui {
+                lalt_rsft_lgui: lalt_rsft_lgui {
                    compatible = "zmk,behavior-macro";
                    #binding-cells = <0>;
                    bindings
