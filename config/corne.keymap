@@ -157,13 +157,13 @@
                 };
         };
 
-                ralts_layer {
-                        bindings = <
-   &kp INS   &kp GRAVE &kp TILDE &kp LBKT &kp LT     &kp GT   &kp RBKT  &kp RA(C) &trans    &kp RA(L)
-   &kp RA(A) &kp RA(O) &kp RA(E) &kp LPAR &kp LBRC   &kp RBRC &kp RPAR  &kp UP    &kp RA(N) &kp RA(S)
-   &kp DEL   &kp F8    &kp LSHFT &kp F9   &kp RA(X)  &trans   &kp LEFT  &kp DOWN  &kp RIGHT &kp RA(Z)
-                       &trans    &trans   &trans     &td_lalt &kp SPACE &td_rsft
-                        >;
-                };
-        };
+   //              ralts_layer {
+   //                      bindings = <
+   // &kp INS   &kp GRAVE &kp TILDE &kp LBKT &kp LT     &kp GT   &kp RBKT  &kp RA(C) &trans    &kp RA(L)
+   // &kp RA(A) &kp RA(O) &kp RA(E) &kp LPAR &kp LBRC   &kp RBRC &kp RPAR  &kp UP    &kp RA(N) &kp RA(S)
+   // &kp DEL   &kp F8    &kp LSHFT &kp F9   &kp RA(X)  &trans   &kp LEFT  &kp DOWN  &kp RIGHT &kp RA(Z)
+   //                     &trans    &trans   &trans     &td_lalt &kp SPACE &td_rsft
+   //                      >;
+   //              };
+   //      };
 };
