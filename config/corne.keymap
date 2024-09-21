@@ -130,10 +130,10 @@
                 };
                 number_layer {
                         bindings = <
-   &kp BSLH &kp COMMA  &kp DOT  &kp PIPE  &kp ASTRK   &kp QMARK &kp N1    &kp N2 &kp N3 &kp N0
-   &kp TAB  &kp EQUAL  &kp PLUS &kp UNDER &kp MINUS   &bt SLASH &kp N4    &kp N5 &kp N6 &kp BSPC
-   &kp ESC  &trans     &trans   &trans    &trans      &bt RCTRL &bt N7    &bt N8 &kp N9 &kp RET
-                       &trans   &trans    &trans      &td_lalt  &kp SPACE &td_rsft
+   &kp BSLH &kp COMMA &kp DOT  &kp PIPE  &kp ASTRK   &kp QMARK &kp N1    &kp N2 &kp N3 &kp N0
+   &kp TAB  &kp EQUAL &kp PLUS &kp UNDER &kp MINUS   &bt SLASH &kp N4    &kp N5 &kp N6 &kp BSPC
+   &kp ESC  &trans    &trans   &trans    &trans      &bt RCTRL &bt N7    &bt N8 &kp N9 &kp RET
+                      &trans   &trans    &trans      &td_lalt  &kp SPACE &td_rsft
                         >;
                 };
 
@@ -145,7 +145,6 @@
                              &trans       &trans       &trans         &td_lalt    &kp SPACE  &td_rsft
                         >;
                 };
-        };
 
                 strings_layer {
                         bindings = <
@@ -155,15 +154,14 @@
                  &trans       &trans     &trans    &trans  &trans &trans
                         >;
                 };
-        };
 
-   //              ralts_layer {
-   //                      bindings = <
-   // &kp INS   &kp GRAVE &kp TILDE &kp LBKT &kp LT     &kp GT   &kp RBKT  &kp RA(C) &trans    &kp RA(L)
-   // &kp RA(A) &kp RA(O) &kp RA(E) &kp LPAR &kp LBRC   &kp RBRC &kp RPAR  &kp UP    &kp RA(N) &kp RA(S)
-   // &kp DEL   &kp F8    &kp LSHFT &kp F9   &kp RA(X)  &trans   &kp LEFT  &kp DOWN  &kp RIGHT &kp RA(Z)
-   //                     &trans    &trans   &trans     &td_lalt &kp SPACE &td_rsft
-   //                      >;
-   //              };
-   //      };
+                ralts_layer {
+                        bindings = <
+   &kp INS   &kp GRAVE &kp TILDE &kp LBKT &kp LT     &kp GT   &kp RBKT  &kp RA(C) &trans    &kp RA(L)
+   &kp RA(A) &kp RA(O) &kp RA(E) &kp LPAR &kp LBRC   &kp RBRC &kp RPAR  &kp UP    &kp RA(N) &kp RA(S)
+   &kp DEL   &kp F8    &kp LSHFT &kp F9   &kp RA(X)  &trans   &kp LEFT  &kp DOWN  &kp RIGHT &kp RA(Z)
+                       &trans    &trans   &trans     &td_lalt &kp SPACE &td_rsft
+                        >;
+                };
+        };
 };
