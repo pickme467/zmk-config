@@ -88,31 +88,31 @@
                 td_layr: tap_dance_0 {
                    compatible = "zmk,behavior-tap-dance";
                    #binding-cells = <0>;
-                   tapping-term-ms = <175>;
+                   tapping-term-ms = <217>;
                    bindings = <&mo 1>, <&mo 2>, <&mo 3>;
                 };
                 td_lctl: tap_dance_1 {
                    compatible = "zmk,behavior-tap-dance";
                    #binding-cells = <0>;
-                   tapping-term-ms = <175>;
+                   tapping-term-ms = <217>;
                    bindings = <&kp LCTL>, <&ctrl_mo1>, <&ctrl_mo2>, <&ctrl_mo3>;
                 };
                 td_ralt: tap_dance_2 {
                    compatible = "zmk,behavior-tap-dance";
                    #binding-cells = <0>;
-                   tapping-term-ms = <175>;
+                   tapping-term-ms = <217>;
                    bindings = <&mo 4>, <&ctrl_mo4>, <&kp LGUI>;
                 };
                 td_lalt: tap_dance_3 {
                    compatible = "zmk,behavior-tap-dance";
                    #binding-cells = <0>;
-                   tapping-term-ms = <175>;
+                   tapping-term-ms = <217>;
                    bindings = <&kp LALT>, <&lalt_rsft>, <&lalt_lgui>;
                 };
                 td_rsft: tap_dance_4 {
                    compatible = "zmk,behavior-tap-dance";
                    #binding-cells = <0>;
-                   tapping-term-ms = <175>;
+                   tapping-term-ms = <217>;
                    bindings = <&kp RSHFT>, <&kp LGUI>, <&rsft_lgui>, <&lalt_rsft_lgui>;
                 };
         };
