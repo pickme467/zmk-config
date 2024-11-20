@@ -139,7 +139,7 @@
                    tapping-term-ms = <217>;
                    quick-tap-ms = <217>;
                    require-prior-idle-ms = <125>;
-                   bindings = <&kp LCTL>, <&sticky_ctrl 1>;
+                   bindings = <&kp LCTL &sticky_ctrl 1>;
                 };
         };
 
