@@ -132,14 +132,14 @@
                    tapping-term-ms = <217>;
                    bindings = <&kp RSHFT>, <&kp LGUI>, <&rsft_lgui>, <&lalt_rsft_lgui>;
                 };
-                th_lctl: th_lctl {
+                th: th {
                    compatible = "zmk,behavior-hold-tap";
-                   #binding-cells = <0>;
+                   #binding-cells = <2>;
                    flavor = "tap-preferred";
                    tapping-term-ms = <217>;
                    quick-tap-ms = <217>;
                    require-prior-idle-ms = <125>;
-                   bindings = <&kp LCTL &sticky_ctrl 1>;
+                   bindings = <&kp>, <&sticky_ctrl>;
                 };
         };
 
@@ -148,10 +148,10 @@
 
                 default_layer {
                         bindings = <
-   &kp SQT  &kp COMMA &kp DOT  &kp P    &kp Y      &kp F    &kp G     &kp C &kp R &kp L
-   &kp A    &kp O     &kp E    &kp U    &kp I      &kp D    &kp H     &kp T &kp N &kp S
-   &kp SEMI &kp Q     &kp J    &kp K    &kp X      &kp B    &kp M     &kp W &kp V &kp Z
-                      &td_ralt &th_lctl &td_layr   &td_lalt &kp SPACE &td_rsft
+   &kp SQT  &kp COMMA &kp DOT  &kp P      &kp Y      &kp F    &kp G     &kp C &kp R &kp L
+   &kp A    &kp O     &kp E    &kp U      &kp I      &kp D    &kp H     &kp T &kp N &kp S
+   &kp SEMI &kp Q     &kp J    &kp K      &kp X      &kp B    &kp M     &kp W &kp V &kp Z
+                      &td_ralt &th LCTL 1 &td_layr   &td_lalt &kp SPACE &td_rsft
                         >;
                 };
                 number_layer {
