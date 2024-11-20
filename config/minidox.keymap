@@ -132,7 +132,7 @@
                    tapping-term-ms = <217>;
                    bindings = <&kp RSHFT>, <&kp LGUI>, <&rsft_lgui>, <&lalt_rsft_lgui>;
                 };
-                th_ctrl: th_ctrl {
+                th_lctl: th_lctl {
                    compatible = "zmk,behavior-hold-tap";
                    #binding-cells = <0>;
                    flavor = "tap-preferred";
