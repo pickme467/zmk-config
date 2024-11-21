@@ -45,7 +45,7 @@
                    compatible = "zmk,behavior-tap-dance";
                    #binding-cells = <0>;
                    tapping-term-ms = <217>;
-                   bindings = <&mo 4>, <&ctrl_mo4>, <&kp LGUI>;
+                   bindings = <&mo 4>, <&lm 4 LCTL>, <&kp LGUI>;
                 };
                 td_lalt: tap_dance_3 {
                    compatible = "zmk,behavior-tap-dance";
