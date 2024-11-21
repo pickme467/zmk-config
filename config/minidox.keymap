@@ -132,6 +132,13 @@
                    tapping-term-ms = <217>;
                    bindings = <&kp RSHFT>, <&kp LGUI>, <&rsft_lgui>, <&lalt_rsft_lgui>;
                 };
+                sll: sticky_layer_no_release {
+                   compatible = "zmk,behavior-sticky-key";
+                   #binding-cells = <1>;
+                   bindings = <&mo>;
+                   release-after-ms = <1000>;
+                   ignore-modifiers;
+                 };
                 th: th {
                    compatible = "zmk,behavior-hold-tap";
                    #binding-cells = <2>;
@@ -139,7 +146,7 @@
                    tapping-term-ms = <217>;
                    quick-tap-ms = <217>;
                    require-prior-idle-ms = <125>;
-                   bindings = <&kp>, <&sl>;
+                   bindings = <&kp>, <&sll>;
                 };
         };
 
