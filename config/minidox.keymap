@@ -67,46 +67,46 @@
 
                 default_layer {
                         bindings = <
-   &kp SQT  &kp COMMA &kp DOT  &kp P      &kp Y      &kp F    &kp G     &kp C &kp R &kp L
-   &kp A    &kp O     &kp E    &kp U      &kp I      &kp D    &kp H     &kp T &kp N &kp S
-   &kp SEMI &kp Q     &kp J    &kp K      &kp X      &kp B    &kp M     &kp W &kp V &kp Z
-                      &td_ralt &td_lctl   &td_layr   &td_lalt &kp SPACE &td_rsft
+   &kp SQT  &kp COMMA &kp DOT  &kp P    &kp Y      &kp F    &kp G     &kp C &kp R &kp L
+   &kp A    &kp O     &kp E    &kp U    &kp I      &kp D    &kp H     &kp T &kp N &kp S
+   &kp SEMI &kp Q     &kp J    &kp K    &kp X      &kp B    &kp M     &kp W &kp V &kp Z
+                      &td_ralt &td_lctl &td_layr   &td_lalt &kp SPACE &td_rsft
                         >;
                 };
                 number_layer {
                         bindings = <
-   &kp BSLH &kp COMMA &kp DOT  &kp PIPE   &kp ASTRK   &kp QMARK &kp N1    &kp N2 &kp N3 &kp N0
-   &kp TAB  &kp EQUAL &kp PLUS &kp UNDER  &kp MINUS   &kp SLASH &kp N4    &kp N5 &kp N6 &kp BSPC
-   &kp ESC  &trans    &trans   &trans     &trans      &kp RCTRL &kp N7    &kp N8 &kp N9 &kp RET
-                      &trans   &trans     &trans      &td_lalt  &kp SPACE &td_rsft
+   &kp BSLH &kp COMMA    &kp DOT      &kp PIPE     &kp ASTRK      &kp QMARK &kp N1    &kp N2 &kp N3 &kp N0
+   &kp TAB  &kp EQUAL    &kp PLUS     &kp UNDER    &kp MINUS      &kp SLASH &kp N4    &kp N5 &kp N6 &kp BSPC
+   &kp ESC  &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &kp RCTRL &kp N7    &kp N8 &kp N9 &kp RET
+                         &trans       &trans       &trans         &td_lalt  &kp SPACE &td_rsft
                         >;
                 };
 
                 functions_layer {
                         bindings = <
-   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &sys_reset   &bootloader    &bootloader &sys_reset &trans    &trans  &bt BT_CLR
-   &kp CAPS     &kp SLCK     &trans       &trans       &trans         &trans      &trans     &kp PG_UP &trans  &trans
-   &bt BT_SEL 0 &bt BT_SEL 1 &trans       &trans       &trans         &trans      &kp HOME   &kp PG_DN &kp END &kp RET
-                             &trans       &trans       &trans         &td_lalt    &kp SPACE  &td_rsft
+   &none    &none    &none  &sys_reset &bootloader    &bootloader &sys_reset &none     &none   &bt BT_CLR
+   &kp CAPS &kp SLCK &none  &none      &none          &none       &none      &kp PG_UP &none   &none
+   &none    &none    &none  &none      &bt BT_SEL 4   &none       &kp HOME   &kp PG_DN &kp END &kp RET
+                     &trans &trans     &trans         &td_lalt    &kp SPACE  &td_rsft
                         >;
                 };
 
                 strings_layer {
                         bindings = <
    &kp F1 &kp F2 &kp F3       &kp F4     &kp F5    &kp F6  &kp F7 &kp F8 &kp F9 &kp F10
-   &trans &trans &kp C_VOL_UP &kp C_MUTE &kp F11   &kp F12 &trans &trans &trans &trans
-   &trans &trans &kp C_VOL_DN &trans     &trans    &trans  &trans &trans &trans &trans
+   &none  &none  &kp C_VOL_UP &kp C_MUTE &kp F11   &kp F12 &none  &none  &none  &none
+   &none  &none  &kp C_VOL_DN &none      &none     &none   &none  &none  &none  &none
                  &trans       &trans     &trans    &trans  &trans &trans
                         >;
                 };
 
                 ralts_layer {
                         bindings = <
-   &kp INS   &kp GRAVE &kp TILDE &kp LBKT &kp LT     &kp GT   &kp RBKT  &kp RA(C) &trans    &kp RA(L)
-   &kp RA(A) &kp RA(O) &kp RA(E) &kp LPAR &kp LBRC   &kp RBRC &kp RPAR  &kp UP    &kp RA(N) &kp RA(S)
-   &kp DEL   &kp F8    &kp LSHFT &kp F9   &kp RA(X)  &trans   &kp LEFT  &kp DOWN  &kp RIGHT &kp RA(Z)
-                       &trans    &trans   &trans     &td_lalt &kp SPACE &td_rsft
+   &kp INS   &kp GRAVE &kp TILDE &kp LBKT &kp LT      &kp GT   &kp RBKT  &kp RA(C) &none     &kp RA(L)
+   &kp RA(A) &kp RA(O) &kp RA(E) &kp LPAR &kp LBRC    &kp RBRC &kp RPAR  &kp UP    &kp RA(N) &kp RA(S)
+   &kp DEL   &kp F8    &kp LSHFT &kp F9   &kp RA(X)   &none    &kp LEFT  &kp DOWN  &kp RIGHT &kp RA(Z)
+                       &trans    &trans   &trans      &td_lalt &kp SPACE &td_rsft
                         >;
                 };
         };
-};
+};t
