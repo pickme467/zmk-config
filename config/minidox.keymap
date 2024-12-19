@@ -84,9 +84,9 @@
 
                 functions_layer {
                         bindings = <
-   &trans       &trans       &trans       &sys_reset   &bootloader    &bootloader &sys_reset &trans    &trans  &bt BT_CLR
+   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &sys_reset   &bootloader    &bootloader &sys_reset &trans    &trans  &bt BT_CLR
    &kp CAPS     &kp SLCK     &trans       &trans       &trans         &trans      &trans     &kp PG_UP &trans  &trans
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans      &kp HOME   &kp PG_DN &kp END &kp RET
+   &bt BT_SEL 0 &bt BT_SEL 1 &trans       &trans       &trans         &trans      &kp HOME   &kp PG_DN &kp END &kp RET
                              &trans       &trans       &trans         &td_lalt    &kp SPACE  &td_rsft
                         >;
                 };
