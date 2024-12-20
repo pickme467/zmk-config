@@ -84,19 +84,19 @@
 
                 functions_layer {
                         bindings = <
-   &none    &none    &none        &sys_reset &bootloader   &bootloader &sys_reset &none     &none   &bt BT_CLR
-   &kp CAPS &kp SLCK &kp C_VOL_UP &kp C_MUTE &none         &none       &none      &kp PG_UP &none   &none
-   &none    &none    &kp C_VOL_DN &none      &none         &none       &kp HOME   &kp PG_DN &kp END &kp RET
-                     &trans       &trans     &trans        &td_lalt    &kp SPACE  &td_rsft
+   &kp F1   &kp F2   &kp F3       &kp F4     &kp F5        &kp F6   &kp F7    &kp F8    &kp F9  &kp F10
+   &kp CAPS &kp SLCK &kp C_VOL_UP &kp C_MUTE &kp F11       &kp F12  &none     &kp PG_UP &none   &kp BSPC
+   &none    &none    &kp C_VOL_DN &none      &none         &none    &kp HOME  &kp PG_DN &kp END &kp RET
+                     &trans       &trans     &trans        &td_lalt &kp SPACE &td_rsft
                         >;
                 };
 
-                strings_layer {
+                service_layer {
                         bindings = <
-   &kp F1       &kp F2       &kp F3 &kp F4       &kp F5         &kp F6  &kp F7 &kp F8 &kp F9 &kp F10
-   &none        &bt BT_SEL 2 &none  &none        &kp F11        &kp F12 &none  &none  &none  &none
-   &bt BT_SEL 0 &bt BT_SEL 1 &none  &bt BT_SEL 3 &bt BT_SEL 4   &none   &none  &none  &none  &none
-                             &trans &trans       &trans         &trans  &trans &trans
+   &none        &none        &none  &sys_reset   &bootloader    &bootloader &sys_reset &none  &none  &bt BT_CLR
+   &none        &bt BT_SEL 2 &none  &none        &none          &none       &none      &none  &none  &none
+   &bt BT_SEL 0 &bt BT_SEL 1 &none  &bt BT_SEL 3 &bt BT_SEL 4   &none       &none      &none  &none  &none
+                             &trans &trans       &trans         &trans      &trans     &trans
                         >;
                 };
 
