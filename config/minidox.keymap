@@ -10,6 +10,7 @@
 
 &soft_off {
         hold-time-ms = <500>;
+        split-peripheral-off-on-press;
 };
 
 / {
