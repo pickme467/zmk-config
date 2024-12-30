@@ -53,7 +53,7 @@ RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4)  RC(2,5) RC(2,6) RC(2,7) RC(2,8) RC(2,9)
         compatible = "zmk,gpio-key-wakeup-trigger";
         trigger = <&soft_off_gpio_key>;
         wakeup-source;
-        extra-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>;
+        extra-gpios = <&pro_micro 4 GPIO_ACTIVE_HIGH>;
     };
 
     soft_off_wakers {
