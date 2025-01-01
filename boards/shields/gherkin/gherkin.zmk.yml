@@ -1,6 +1,6 @@
 file_format: "1"
-id: minidox
-name: Minidox
+id: gherkin
+name: Gherkin
 type: shield
 url: https://www.40percent.club/2016/11/gherkin.html
 requires: [pro_micro]
