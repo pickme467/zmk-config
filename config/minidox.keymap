@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 pickme467
+ * Copyright (c) 2025 pickme467
  *
  * SPDX-License-Identifier: MIT
  */
@@ -79,10 +79,10 @@
                 };
                 number_layer {
                         bindings = <
-   &kp BSLH &kp COMMA    &kp DOT      &kp PIPE     &kp ASTRK      &kp QMARK &kp N1    &kp N2 &kp N3 &kp N0
-   &kp TAB  &kp EQUAL    &kp PLUS     &kp UNDER    &kp MINUS      &kp SLASH &kp N4    &kp N5 &kp N6 &kp BSPC
-   &kp ESC  &bt BT_SEL 3 &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0   &kp RCTRL &kp N7    &kp N8 &kp N9 &kp RET
-                         &trans       &trans       &trans         &td_lalt  &kp SPACE &td_rsft
+   &kp BSLH &kp COMMA &kp DOT  &kp PIPE  &kp ASTRK      &kp QMARK &kp N1    &kp N2 &kp N3 &kp N0
+   &kp TAB  &kp EQUAL &kp PLUS &kp UNDER &kp MINUS      &kp SLASH &kp N4    &kp N5 &kp N6 &kp BSPC
+   &kp ESC  &none     &none    &none     &none          &kp RCTRL &kp N7    &kp N8 &kp N9 &kp RET
+                      &trans   &trans    &trans         &td_lalt  &kp SPACE &td_rsft
                         >;
                 };
 

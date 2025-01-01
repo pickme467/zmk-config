@@ -1,0 +1,7 @@
+# Copyright (c) 2025 pickme467
+# SPDX-License-Identifier: MIT
+
+if SHIELD_GHERKIN
+config ZMK_KEYBOARD_NAME
+    default "Gherkin"
+end
