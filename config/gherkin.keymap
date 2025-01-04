@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &soft_off {
         hold-time-ms = <200>;
@@ -38,7 +39,13 @@
                    compatible = "zmk,behavior-tap-dance";
                    #binding-cells = <0>;
                    tapping-term-ms = <217>;
-                   bindings = <&mo 1>, <&mo 2>, <&mo 3>;
+                   bindings = <&mo 1>, <&mo 2>, <&mo 3>, <&mo 5>;
+                };
+                qw_layr: tap_dance_1 {
+                   compatible = "zmk,behavior-tap-dance";
+                   #binding-cells = <0>;
+                   tapping-term-ms = <217>;
+                   bindings = <&mo 8>, <&mo 2>, <&mo 3>, <&mo 5>;
                 };
         };
 
@@ -52,6 +59,7 @@
    &kp SEMI      &kp Q          &lt 4 J      &kp K      &td_layr &kp SPACE &kp M      &kp W      &kp V      &kp Z
                         >;
                 };
+
                 number_layer {
                         bindings = <
    &kp BSLH &kp COMMA &kp DOT  &kp PIPE  &kp ASTRK &kp QMARK &kp N1    &kp N2 &kp N3 &kp N0
@@ -71,7 +79,7 @@
                 service_layer {
                         bindings = <
    &soft_off    &kp LCTL     &none        &sys_reset   &bootloader    &none &none &none  &none  &bt BT_CLR
-   &none        &none        &none        &none        &none          &none &none &none  &none  &none
+   &none        &none        &none        &none        &none          &none &none &to 7  &to 6  &to 0
    &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none &none &none  &none  &none
                         >;
                 };
@@ -81,6 +89,38 @@
    &kp INS   &kp GRAVE &kp TILDE &kp LBKT &kp LT      &kp GT   &kp RBKT  &kp RA(C) &none     &kp RA(L)
    &kp RA(A) &kp RA(O) &kp RA(E) &kp LPAR &kp LBRC    &kp RBRC &kp RPAR  &kp UP    &kp RA(N) &kp RA(S)
    &kp DEL   &kp F8    &none     &kp F9   &kp RA(X)   &kp B    &kp LEFT  &kp DOWN  &kp RIGHT &kp RA(Z)
+                        >;
+                };
+
+                mouse_layer {
+                        bindings = <
+   &none &none &none &mkp MB2 &none &none &none          &none          &none           &msc SCRL_UP
+   &none &none &none &mkp MB1 &none &none &none          &mmv MOVE_UP   &none           &msc SCRL_DOWN
+   &none &none &none &mkp MB3 &none &none &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &none
+                        >;
+                };
+
+                game_layer {
+                        bindings = <
+   &kp SQT  &kp COMMA &kp DOT &kp P &kp Y    &kp F     &kp G &kp C &kp R &kp L
+   &kp A    &kp O     &kp E   &kp U &kp I    &kp D     &kp H &kp T &kp N &kp S
+   &kp SEMI &kp Q     &kp J   &kp K &td_layr &kp SPACE &kp M &kp W &kp V &kp Z
+                        >;
+                };
+
+                qwerty_layer {
+                        bindings = <
+   &kp Q    &kp W     &kp E   &kp R &kp T    &kp Y     &kp U &kp I     &kp O   &kp P
+   &kp A    &kp S     &kp D   &kp F &kp G    &kp H     &kp J &kp K     &kp L   &kp SEMI
+   &kp Z    &kp X     &kp C   &kp V &qw_layr &kp SPACE &kp M &kp COMMA &kp DOT &kp SLASH
+                        >;
+                };
+
+                qwerty_number_layer {
+                        bindings = <
+   &kp BSLH &kp COMMA &kp DOT  &kp PIPE  &kp ASTRK &kp QMARK &kp N1    &kp N2 &kp N3 &kp N0
+   &kp TAB  &kp EQUAL &kp PLUS &kp UNDER &kp MINUS &kp SLASH &kp N4    &kp N5 &kp N6 &kp BSPC
+   &kp ESC  &none     &none    &kp B     &none     &kp N     &kp N7    &kp N8 &kp N9 &kp RET
                         >;
                 };
         };
