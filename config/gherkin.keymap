@@ -13,6 +13,10 @@
         hold-time-ms = <200>;
 };
 
+&mt {
+        tapping-term-ms = <247>;
+};
+
 / {
         macros {
                 lm: lm {
@@ -38,13 +42,13 @@
                 td_layr: tap_dance_0 {
                    compatible = "zmk,behavior-tap-dance";
                    #binding-cells = <0>;
-                   tapping-term-ms = <217>;
+                   tapping-term-ms = <275>;
                    bindings = <&mo 1>, <&mo 2>, <&mo 3>, <&mo 5>;
                 };
                 qw_layr: tap_dance_1 {
                    compatible = "zmk,behavior-tap-dance";
                    #binding-cells = <0>;
-                   tapping-term-ms = <217>;
+                   tapping-term-ms = <275>;
                    bindings = <&mo 8>, <&mo 2>, <&mo 3>, <&mo 5>;
                 };
         };
